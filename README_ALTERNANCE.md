@@ -66,7 +66,21 @@ graph LR
 
 ## 📸 Aperçu
 
-> (Insérer ici une capture d'écran de l'interface finale)
+> ![Interface Finale](assets/interfarce%203.png)
+
+## 🚀 Fonctionnalités Clés
+
+1. **Dashboard Premium Cyber-Security** 🎨 :
+    * Interface sombre "Glassmorphism" avec animations fluides.
+    * Visualisation claire des données (IP, FAI, ASN, Drapeau).
+    * **Carte Interactive** : Intégration native de Leaflet.js (OpenStreetMap) avec zoom automatique.
+
+2. **Géolocalisation Avancée** 🌍 :
+    * Données précises via l'API CIRCL.lu.
+    * **Mon IP** : Détection automatique de votre IP publique en un clic.
+    * Support des noms d'hôtes personnalisés (API locale ou distante).
+
+3. **Architecture Robuste** 🏗️ :
 
 ---
 
