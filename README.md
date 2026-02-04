@@ -66,7 +66,7 @@ graph LR
 
 ## 📸 Aperçu
 
-> ![Interface Finale](assets/interfarce%203.png)
+> ![Interface Finale](interface.png)
 
 ## 🚀 Fonctionnalités Clés
 
