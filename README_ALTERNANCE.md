@@ -66,7 +66,7 @@ graph LR
 
 ## 📸 Aperçu
 
-*(Insérer ici une capture d'écran de l'interface finale)*
+> (Insérer ici une capture d'écran de l'interface finale)
 
 ---
 
