@@ -58,9 +58,9 @@ Développer une application professionnelle de **cybersécurité** et de **géol
 
 ```mermaid
 graph LR
-    User[Utilisateur] -->|HTTPS| Frontend[Client NiceGUI (Port 8080)]
-    Frontend -->|API REST| Backend[Serveur FastAPI (Port 8000)]
-    Backend -->|Request| ExternalAPI[CIRCL Public API]
+    User["Utilisateur"] -->|HTTPS| Frontend["Client NiceGUI (Port 8080)"]
+    Frontend -->|API REST| Backend["Serveur FastAPI (Port 8000)"]
+    Backend -->|Request| ExternalAPI["CIRCL Public API"]
     Backend -->|JSON| Frontend
 ```
 
