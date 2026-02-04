@@ -38,6 +38,17 @@ async def geolookup(ip: str):
             raise ValueError("'country_info' missing or not a dict")
 
         country = country_info.get("Country", "Unknown")
+        country_code = country_info.get("Alpha-2 code")
+
+        # Extraction ASN/ISP (peut être dans un autre élément de la liste)
+        asn = None
+        isp = None
+        for entry in raw_data:
+            country_data = entry.get("country", {})
+            if "AutonomousSystemOrganization" in country_data:
+                isp = country_data.get("AutonomousSystemOrganization")
+                asn = country_data.get("AutonomousSystemNumber")
+                break
 
         # Conversion et validation des types
         try:
@@ -58,6 +69,9 @@ async def geolookup(ip: str):
     return {
         "ip": ip,
         "country": country,
+        "country_code": country_code,
+        "isp": isp,
+        "asn": asn,
         "latitude": lat,
         "longitude": lon,
     }
